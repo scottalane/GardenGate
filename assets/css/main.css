@@ -1,0 +1,625 @@
+a {
+	text-decoration: none;
+}
+
+#wrapper {
+	max-width: 940px;
+	margin: 0 auto;
+	padding 0 5%;
+}
+
+
+
+img{
+	max-width: 100%;
+}
+
+
+/*******************************************
+ SWING OUT GATE STYLE & MENU BAR SECTION
+Lazily stolen from 
+http://codepen.io/brandonkennedy/pen/DdjLG   *********
+*********************************************/
+@import "compass/css3";
+
+* {
+  box-sizing: border-box;
+}
+html, body {
+  	background: url("../artwork/Background_Logo.png");
+  	background-color: white;
+	background-repeat: no-repeat;
+	background-position: center-top;
+	font-size: 24px;
+  	height: 100%;
+}
+
+body {
+	margin:0 auto;
+	font-color: gray;
+	font-family: Helvetica, sans-serif;
+	font-weight: normal;
+	color: #A1A1A1;
+}
+
+.container {
+  display: block;
+  font-size: 1.6rem;
+  height: 100%;
+  perspective: 200rem;
+  position: relative;
+  #menu-toggle {
+    position: fixed;
+    top: -3rem;
+  }
+
+  .menu {
+    background: #ccc;
+    height: 100%;
+    padding-top: 7rem;
+    position: fixed;
+    transform-origin: left top;
+    transform-style: preserve-3d;
+    transform: rotateY(105deg);
+    top: 0;
+    width: 16rem;
+    label {
+      &.fa-remove {
+        border: .1rem solid #000;
+        border-radius: 50%;
+        color: #000;
+        cursor: pointer;
+        font-size: 4rem;
+        height: 5rem;
+        line-height: 4.6rem;
+        position: absolute;
+        right: 1rem;
+        text-align: center;
+        top: 1rem;
+        width: 5rem;
+      }
+    }
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      li {
+        a {
+          color: #000;
+          display: block;
+          padding: 1rem 2rem 1rem 3rem;
+          text-align: right;
+          text-decoration: none;
+          transform: translateX(-1rem);
+          width: 17rem;
+          &:hover {
+            background: #333;
+            border-radius: 0 .2rem .2rem 0;
+            color: #eee;
+            padding-right: 3rem;
+            position: relative;
+            transform: translateX(0rem);
+          }
+        }
+      }
+    }
+  }
+  .content {
+    background: #fff;
+    height: 100%;
+    overflow: auto;
+    padding: 7rem 1.5rem 1.5rem;
+    transform-origin: right top;
+    transform-style: preserve-3d;
+    width: 100%;
+    label {
+      &.fa-navicon {
+        background: #fff;
+        border: .1rem solid #000;
+        border-radius: .2rem;
+        color: #000;
+        cursor: pointer;
+        font-size: 4rem;
+        height: 5rem;
+        left: 1rem;
+        line-height: 5rem;
+        position: absolute;
+        text-align: center;
+        top: 1rem;
+        width: 5rem;
+      }
+    }
+  }
+  #menu-toggle:checked {
+    ~ .menu {
+      transform: rotateY(0deg);
+      z-index: 1000;
+    }
+    ~ .content {
+      overflow: hidden;
+      transform: rotateY(-30deg);
+    }
+  }
+}
+/* start transitions */
+.container {
+  .menu,
+  #menu-toggle:checked ~ .content {
+    transition: all 1s ease;
+  }
+  #menu-toggle:checked ~ .menu,
+  .content {
+    transition: all 1s ease .2s;
+  }
+  .menu ul li a {
+    transition: all .3s ease .1s;
+  }
+}
+/* end transitions */
+
+
+
+/*******************************************
+BACKGROUNG IMAGE
+*********************************************/
+
+
+/*******************************************
+NAVIGATION HINGES
+*********************************************/
+
+
+.menu-icon{
+	position: absolute;
+	margin-top: 450px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 480px;
+	padding: 0 0 0 0;
+	z-index: 10;
+}
+
+
+/*******************************************
+HEADER COLOR & STYLING
+*********************************************/
+.header {
+	position: relative;
+}
+
+.menu-button{
+	list-style: none;
+}
+.add-hours{
+	text-align: center;
+}
+#logo-garden {
+	max-width: 100%;
+	margin: 0 0 0 0;
+	padding: 20px 0 0 0;
+}
+
+#logo-sm-garden {
+	text-align: center;
+	line-height: .05em;
+}
+#logo-sm-needlepoint {
+	text-align: center;
+	line-height: .05em;
+}
+h2 {
+	font-family: Sacramento, cursive;
+	font-weight: normal;
+	font-size: 90px;
+	color: #C0C0C0;
+}
+h2 .shadow {
+	color: #000000;
+	text-shadow: -4px -4px black;
+}
+h5 {
+	font-family: Serifa, sans-serif;
+	font-weight: normal;
+	font-size: 72px;
+	color: #C0C0C0;
+	line-height: 1em;
+}
+
+
+
+
+/*******************************************
+HOME PAGE PHOTO SIZES AND PLACEMENT
+*********************************************/
+img.extra-small{
+	width: 50px;
+	height: 50px;
+}
+img.small{
+	width: 225px;
+	height: 225px;
+}
+img.medium{
+	width: 275px;
+	height: 275px;
+}
+img.large{
+	width: 300px;
+	height: 300px;
+}
+
+.color-wheel	{
+	margin-top: 0px;
+	margin-right: 650px;
+	margin-bottom: 65px;
+	margin-left: 0px;
+	padding: 0 0 0 0;
+	float: clear;
+}
+.carol{
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 420px;
+	width: 250;
+	height: 250px;
+	z-index: 5;
+}
+.store1{
+	margin-top: 10px;
+	margin-right: 200px;
+	margin-bottom: 0px;
+	margin-left: 150px;
+	width: 450;
+	height: 450px;
+}
+.store2{
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 370px;
+	width: 300;
+	height: 300px;
+}
+.bunny{
+	width: 400px;
+	height: 400px;
+	margin-top: 300px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 50px;
+}
+
+.carol_bird{
+	width: 325px;
+	height: 325px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 200px;
+}
+.ballerina{
+	width: 440px;
+	height: 550px;
+	margin-top: 30px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 200px;
+}
+
+
+/*******************************************
+P ELEMENT STYLING
+*********************************************/
+.hours {
+color: #000000;
+	font-family: Serifa, sans-serif;
+	font-size: 32px;
+	font-weight: normal;
+	text-align: center;
+	margin-left: 10px;
+	line-height: 5px;
+}
+.address {
+color: #000000;
+	font-family: Serifa, sans-serif;
+	font-size: 60px;
+	font-weight: normal;
+	text-align: center;
+	margin-left: 10px;
+	line-height: 1em;
+}
+.welcome{
+	margin: 0 0 0 0;
+	text-align: center;
+	z-index: 1;
+
+}
+.about{
+	font-size: 24px;
+	margin: 0 0 0 0;
+	padding: 5px;
+	text-align: center;
+}
+
+.names{
+	font-family: Sacramento, cursive;
+	font-weight: normal;
+	font-size: 60px;
+	color: black;
+	margin: 0 0 0 0;
+}
+p .menu{
+	font-size: 24px;
+	color: black;
+	line-height: .50em;
+	text-align: center;
+}
+.Barbara{
+	padding: 0 100 0 420;
+}
+
+
+/*******************************************
+STYLING LINKS
+*********************************************/
+a:link{
+	color: #C0C0C0;
+	text-decoration: none;
+}
+a:visited{
+	color: #000000;
+}
+a:hover{
+	color: #32CD32;
+	text-decoration: none;
+}
+a;active{
+	color: #FF8C00;
+}
+
+
+
+/*******************************************
+SWING OUT MENU BAR
+*********************************************/
+
+div ul li .menu-button{
+position: ;
+}
+nav .menu-button{
+	font-size: 28px;
+	color: #C0C0C0;
+	text-align: left;
+	margin: 10px 0px 0px 900px;
+	padding: 0 0 0 0;
+	float: right;
+}
+
+
+
+/*******************************************
+POP UP CLASS SCHEDULE GREEDILY TAKEN WITHOUT REGRET FROM 
+http://www.sevensignature.com/blog/code/pure-css-popup-without-javascript/
+*********************************************/
+body {
+  font-family: Helvetica, sans-serif;
+  background: url(4.jpg);
+  background-size: cover;
+}
+
+h1 {
+  text-align: center;
+  font-family: Serifa, Helvetica, sans-serif;
+  color: #A1A1A1;
+  margin: 100px 0;
+}
+/* .box CONTROLS THE SIZE OF THE 'CLASS SCHEDULE' MENUE ICON HINGE SHAPED BUTTON*/
+.box {
+  width: 60%;
+  margin: 0 850 0 0;
+  background: rgba(255,255,255,0.2);
+  padding: 35px;
+  border: 2px solid #fff;
+  border-radius: 20px/50px;
+  background-clip: padding-box;
+  text-align: center;
+}
+
+.button {
+  font-size: 1em;
+  padding: 10px;
+  color: #fff;
+ /* border: 2px solid orange;*/
+  border-radius: 20px/50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.button:hover {
+/*  background: #32CD32;*/
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 75%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Serifa, Helvetrica, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 12px;
+  font-weight: normal;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #32CD32;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+
+
+
+/*******************************************
+FINISHED PIECES
+*********************************************/
+
+
+
+
+
+
+
+/*******************************************
+GALLERY
+*********************************************/
+#gallery{
+	text-align: center;
+}
+#gallery div p{
+	font-size: 12px;
+	color: black;
+}
+.add_to_cart_btn{
+	font-family: Sacramento, cursive;
+	font-size: 18px;
+}
+.canvas_title{
+	font-size: 36px;
+	display: inline-block;
+	width: 150px;
+	height: 75;
+	margin: 0;
+
+}
+
+/*******************************************
+FOOTER
+*********************************************/
+footer{
+	text-align: center;
+	background-color: #A9A9A9;
+	font-family: Sacramento;
+	font-size: 60px;
+	font-weight: normal;
+
+}
+h6 {
+	text-align: center;
+	font-family: Serifa, sans-serif;
+	font-size: 36px;
+	color: white;
+}
+.pinterest{
+	color: red;
+	height; 60px;
+	width: 30px;
+	background-color: white;
+	min-width: 450px;
+	max-width: 650px;
+	padding: 5px;
+	float: left;
+	margin: 0px;
+	text-align: center;
+}
+.facebook{
+	color: #40E0D0;
+	height; 60px;
+	width: 30px;
+	background-color: white;
+	min-width: 450px;
+	max-width: 650px;
+	padding: 5px;
+	margin: 0px;
+	text-align: center;
+	float: right;
+}
+.twitter{
+	color: #FF8C00;
+	height; 60px;
+	width: 30px;
+	background-color: white;
+	min-width: 450px;
+	max-width: 650px;
+	padding: 5px;
+	margin: 0px;
+	text-align: center;
+	float: 
+}
+.instagram{
+	color: #4169E1;
+	height; 60px;
+	width: 30px;
+	background-color: white;
+	min-width: 450px;
+	max-width: 650px;
+	padding: 5px;
+	margin: 0px;
+	text-align: center;
+	float: right;
+}
+.home{
+	color: 32CD32;
+	height; 60px;
+	width: 30px;
+	background-color: white;
+	min-width: 450px;
+	max-width: 650px;
+	padding: 5px;
+	margin: 0px;
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
