@@ -8,11 +8,10 @@ a {
 	padding 0 5%;
 }
 
-
-
 img{
 	max-width: 100%;
 }
+
 
 
 /*******************************************
@@ -170,7 +169,7 @@ NAVIGATION HINGES
 
 
 .menu-icon{
-	position: absolute;
+	position: relative;
 	margin-top: 450px;
 	margin-right: 0px;
 	margin-bottom: 0px;
@@ -178,7 +177,15 @@ NAVIGATION HINGES
 	padding: 0 0 0 0;
 	z-index: 10;
 }
-
+.menu-icon_more_finished{
+	position: relative;
+	margin-top: 20px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 480px;
+	padding: 0 0 0 0;
+	z-index: 10;
+}
 
 /*******************************************
 HEADER COLOR & STYLING
@@ -200,12 +207,16 @@ HEADER COLOR & STYLING
 }
 
 #logo-sm-garden {
+	color: white;
 	text-align: center;
 	line-height: .05em;
 }
 #logo-sm-needlepoint {
+	color: white;
 	text-align: center;
 	line-height: .05em;
+	margin-top: 0;
+	margin-bottom: 40px;
 }
 h2 {
 	font-family: Sacramento, cursive;
@@ -217,6 +228,15 @@ h2 .shadow {
 	color: #000000;
 	text-shadow: -4px -4px black;
 }
+h3{
+	text-align: center;
+}
+h4{
+	font-family: Serifa, sans-serif;
+	text-align: center;
+	font-size: 28px;
+	color: black;
+}
 h5 {
 	font-family: Serifa, sans-serif;
 	font-weight: normal;
@@ -224,30 +244,16 @@ h5 {
 	color: #C0C0C0;
 	line-height: 1em;
 }
-
+h6	{
+	font-size: 48px;
+	text-align: center;
+}
 
 
 
 /*******************************************
 HOME PAGE PHOTO SIZES AND PLACEMENT
 *********************************************/
-img.extra-small{
-	width: 50px;
-	height: 50px;
-}
-img.small{
-	width: 225px;
-	height: 225px;
-}
-img.medium{
-	width: 275px;
-	height: 275px;
-}
-img.large{
-	width: 300px;
-	height: 300px;
-}
-
 .color-wheel	{
 	margin-top: 0px;
 	margin-right: 650px;
@@ -255,6 +261,7 @@ img.large{
 	margin-left: 0px;
 	padding: 0 0 0 0;
 	float: clear;
+	z-index: 5;
 }
 .carol{
 	margin-top: 0px;
@@ -312,7 +319,7 @@ img.large{
 P ELEMENT STYLING
 *********************************************/
 .hours {
-color: #000000;
+	color: #000000;
 	font-family: Serifa, sans-serif;
 	font-size: 32px;
 	font-weight: normal;
@@ -321,7 +328,7 @@ color: #000000;
 	line-height: 5px;
 }
 .address {
-color: #000000;
+	color: #000000;
 	font-family: Serifa, sans-serif;
 	font-size: 60px;
 	font-weight: normal;
@@ -348,6 +355,7 @@ color: #000000;
 	font-size: 60px;
 	color: black;
 	margin: 0 0 0 0;
+	text-align: center;
 }
 p .menu{
 	font-size: 24px;
@@ -358,7 +366,28 @@ p .menu{
 .Barbara{
 	padding: 0 100 0 420;
 }
-
+.send_e-mail{
+	color: black;
+	font-size: 24px
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 0;
+}
+.type_question{
+	font-size: 18px
+	text-align: center;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.downtown{
+	font-size: 18px;
+	font-weight: normal;
+	color: black;
+	text-align: center;
+}
+input{
+	/*HOW DO I CENTER THIS ON THE PAGE?*/
+}
 
 /*******************************************
 STYLING LINKS
@@ -383,10 +412,6 @@ a;active{
 /*******************************************
 SWING OUT MENU BAR
 *********************************************/
-
-div ul li .menu-button{
-position: ;
-}
 nav .menu-button{
 	font-size: 28px;
 	color: #C0C0C0;
@@ -404,7 +429,7 @@ http://www.sevensignature.com/blog/code/pure-css-popup-without-javascript/
 *********************************************/
 body {
   font-family: Helvetica, sans-serif;
-  background: url(4.jpg);
+  background: url("4.jpgg");
   background-size: cover;
 }
 
@@ -496,8 +521,9 @@ h1 {
 FINISHED PIECES
 *********************************************/
 
-
-
+.finished_pieces{
+	border-radius: 75%;
+}
 
 
 
@@ -528,10 +554,10 @@ GALLERY
 /*******************************************
 FOOTER
 *********************************************/
-footer{
+footer {
 	text-align: center;
 	background-color: #A9A9A9;
-	font-family: Sacramento;
+	font-family: Sacramento, cursive;
 	font-size: 60px;
 	font-weight: normal;
 
@@ -541,68 +567,56 @@ h6 {
 	font-family: Serifa, sans-serif;
 	font-size: 36px;
 	color: white;
+	margin-top: 25px;
+	margin-bottom: 0px;
+	line-height: 100px;
 }
+
+
+.footer_nav {
+	background-color: white;
+}
+.social_container{
+	color: red;
+	min-width: 20%;
+	max-width: 650px;
+	max-height: 100px
+	padding: 5px;
+	margin: 0px;
+	text-align: center;
+	display: inline-block;
+}
+
 .pinterest{
 	color: red;
-	height; 60px;
-	width: 30px;
-	background-color: white;
-	min-width: 450px;
-	max-width: 650px;
-	padding: 5px;
-	float: left;
-	margin: 0px;
-	text-align: center;
+	margin: 0;
 }
+	
 .facebook{
 	color: #40E0D0;
-	height; 60px;
-	width: 30px;
-	background-color: white;
-	min-width: 450px;
-	max-width: 650px;
-	padding: 5px;
-	margin: 0px;
-	text-align: center;
-	float: right;
-}
+	margin: 0;
+}	
 .twitter{
 	color: #FF8C00;
-	height; 60px;
-	width: 30px;
-	background-color: white;
-	min-width: 450px;
-	max-width: 650px;
-	padding: 5px;
-	margin: 0px;
-	text-align: center;
-	float: 
+	margin: 0;
 }
 .instagram{
-	color: #4169E1;
-	height; 60px;
-	width: 30px;
-	background-color: white;
-	min-width: 450px;
-	max-width: 650px;
-	padding: 5px;
-	margin: 0px;
-	text-align: center;
-	float: right;
+	color: #40E0D0;
+	margin: 0;
 }
 .home{
 	color: 32CD32;
 	height; 60px;
-	width: 30px;
+	width: 100px;
 	background-color: white;
-	min-width: 450px;
-	max-width: 650px;
 	padding: 5px;
 	margin: 0px;
 	text-align: center;
 }
-
-
+/*******************************************
+SHOPPING CART
+*********************************************/
+/* Global settings */
 
 
 

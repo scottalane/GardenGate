@@ -13,98 +13,146 @@
             
         </header> 
             <div>
-                <img src="assets/artwork/GG_Menu_Icon.png" id="top" alt="menu navigation button" class="menu-icon">
+                <img src="../assets/artwork/GG_Menu_Icon.png" id="top" alt="menu navigation button" class="menu-icon">
         </div> 
-<!--EXPERIMENTAL SWING OUT GATE & MENU BAR BEGINS HERE*************EXPERIMENTAL SWING OUT MENU BAR**********************-->
+<!-- SWING OUT GATE & MENU BAR BEGINS HERE  Lazily stolen from 
+http://codepen.io/brandonkennedy/pen/DdjLG -->
         <div class="container">
             <input type="checkbox" id="menu-toggle" name="menu-toggle">
         <div class="menu">
             <label for="menu-toggle" class="fa fa-remove">
-            </label>
-                <ul>
-                    <li class="menu-button"><a href="html_pages/canvases.html">Canvases</a></li>
-                    <li class="menu-button"><a href="html_pages/fibers.html">Fibers</a></li>
-                    <li class="menu-button"><a href="html_pages/supplies.html">Supplies</a></li>
-                    <li class="menu-button"><a href="html_pages/finishing.html>">Finishing</a></li>
-                    <li class="menu-button"><a href="html_pages/inspiration.html">Inspiration</a></li>
-                    <li class="menu-button"><a href="../html_pages/index.html">Home</a></li>
-                    <li class="menu-button"><a href="../html_pages/cart.html">Shopping Cart</a></li>
-                </ul>
-            </div>
-            <div class="content">
-                <label for="menu-toggle" class="fa fa-navicon"></label>
-            </div>
-            </div>
+                </label>
+                    <ul>
+                        <li class="menu-button"><a href="html_pages/canvases.html">Canvases</a></li>
+                        <li class="menu-button"><a href="html_pages/fibers.html">Fibers</a></li>
+                        <li class="menu-button"><a href="html_pages/supplies.html">Supplies</a></li>
+                        <li class="menu-button"><a href="html_pages/inspiration.html">Inspiration</a></li>
+                        <li class="menu-button"><a href="index.html">Home</a></li>
+                        <li class="menu-button"><a href="html_pages/shopping_cart.html">Cart</a></li>
+                    </ul>
+                </div>
+        <div class="content">
+            <label for="menu-toggle" class="fa fa-navicon"></label>
+
+        <img src="../assets/images/Finished_Pieces/Abstract_Pillow.jpg" class="finished_pieces">
+            <h3 class="names">Andy</h3>
+        <img src="../assets/images/Finished_Pieces/Bird_Purse.jpg" class="finished_pieces">
+            <h3 class="names">Michelle</h3>
+        <img src="../assets/images/Finished_Pieces/Easter_Basket_and_Egg.jpg" class="finished_pieces">
+            <h3 class="names">Jasmine</h3>
 <!--EXPERIMENTAL FLY OUT MENU BAR ENDS HERE*************EXPERIMENTAL FLY OUT MENU BAR**********************-->  
-<!-- this is the next section-->
-    <nav><img src="assets/artwork/GG_MoreFinishedPieces_Icon.png" alt="more finished pieces navigation button" class="menu-icon" </nav>
-    <!-- I think the following section should be a single column table...no? Because in the larger incarnations on tablet and Desktop there will be multiple rows of finished pieces to view -->
+
+
+<!--CLASS SCHEDULE - GATE HINGE - ICON MENU BUTTON-->
+<div class="box">
+    <a class="button" href="#popup1"><img src="../assets/artwork/GG_Class_Schedule_Icon.png" alt="class schedule navigation icon"></a>
+</div>
+<!--Popup/Modal Windows without JavaScript http://www.sevensignature.com/blog/code/pure-css-popup-without-javascript/  -->
+
+<div id="popup1" class="overlay">
+    <div class="popup">
+        <h2>Class Schedule</h2>
+            <table>
+                <tr>      
+                    <th>Monday</th>
+                        <td>1-3-5pm</td>
+                        <td>Carol Stella</td>
+                </tr> 
+                <tr>
+                    <th>Tuesday</th>
+                        <td>3-5pm</td>
+                        <td>Penny Apodaca</td>
+                </tr>
+                <tr>
+                    <th>Wednesday</th>
+                        <td>10am-12pm</td>
+                        <td>Shelly Mullin</td>
+                </tr>
+                <tr>
+                    <th>Thursday</th>
+                        <td>1pm-3pm & *6-8pm</td>
+                        <td>Shelly Mullin</td>
+                </tr>
+                <tr>
+                    <th>Friday</th>
+                        <td>*10:30am-12:30pm</td>
+                        <td>Eleanor Bailey</td>
+                </tr>
+            </table>
+        <a class="close" href="#">×</a>
+        <div class="content">
+            *These classes meet every other week!
+        </div>
+    </div>
+</div>
+
+<div>
+<!-- I think the following section should be a single column table...no? Because in the larger incarnations on tablet and Desktop there will be multiple rows of finished pieces to view -->
 <div>
     <h2>Finished Pieces</h2>
-        <img src="assets/images/Finished_Pieces/Finished_Stocking_Sabrina.jpg">
-            <h3>Andy</h3>
-        <img src="Photo TBD">
-            <h3>Michelle</h3>
-        <img src="Photo TBD">
-            <h3>Jasmine</h3>
-        <img src="Photo TBD">
-            <h3>Berthe</h3>
-        <img src="Photo TBD">
-            <h3>Sidney</h3>
-            <img src="Photo TBD">
-            <h3>Zoey</h3>
-        <img src="Photo TBD">
-            <h3>MaryEllen</h3>
-        <img src="Photo TBD">
-            <h3>Barbara</h3>
-        <img src="Photo TBD">
-            <h3>Yolanda</h3>
-        <img src="Photo TBD">
-            <h3>Pat</h3>
+        <img src="../assets/images/Finished_Pieces/Finished_floral_Basket.jpg" class="finished_pieces">
+            <h3 class="names">Berthe</h3>
+        <img src="../assets/images/Finished_Pieces/Grey_Rose.jpg" class="finished_pieces">
+            <h3 class="names">Sidney</h3>
+            <img src="../assets/images/Finished_Pieces/Finished_LittleBird.jpg" class="finished_pieces">
+            <h3 class="names">Zoey</h3>
+        <img src="../assets/images/Finished_Pieces/Peggy_Stocking.jpg" class="finished_pieces">
+            <h3 class="names">MaryEllen</h3>
+        <img src="../assets/images/Finished_Pieces/Pumpkin_on_Plaid.jpg" class="finished_pieces">
+            <h3 class="names">Barbara</h3>
+        <img src="../assets/images/Finished_Pieces/Finished_CW_GardenGate.png" class="finished_pieces">
+            <h3 class="names">Yolanda</h3>
+        <img src="../assets/images/Finished_Pieces/Finished_GardenGate-.jpg" class="finished_pieces">
+            <h3 class="names">Pat</h3>
                 <p>to view MORE FINISHED PIECES<br> click here</p>
-    </div>
+</div>
+<!--MORE FINISHED PIECES - GATE HINGE - ICON MENU BUTTON-->
+
+    <nav><img src="../assets/artwork/GG_MoreFinishedPieces_Icon.png" alt="more finished pieces navigation button" class="menu-icon"></nav>
         </div>
-            <div>    
-                <h2 id="logo-sm-garden" class="drop-shadow">Garden Gate</h2>
-                    <h5 id="logo-sm-needlepoint" class="drop-shadow">needlepoint</h5>
-                        <p>Downtown Covina / 236 North Citrus Avenue / Covina / 626-966-4141</p>
-            </div>
-                    <h4>Join our Mailing List</h4>
-                        <form action="http://222.example.com/subscribe.php">
-                            <p>Subscribe to our e-mail list</p>
-                                <input type="text" name="email" />
-                                <inout type="submit" name="susbcribe" value="Subscribe" />
-                        </form>
-                    <h4>Ask Carol</h4>
-                        <form action="http://222.example.com/subscribe.php">
-                            <p>Ask Carol</p>
-                                <input type="text" name="email" />
-                                <inout type="submit" name="susbcribe" value="Subscribe" />
-                        </form>
+         <div>    
+            <h2 id="logo-sm-garden" class="drop-shadow">Garden Gate</h2>
+                <h5 id="logo-sm-needlepoint" class="drop-shadow">needlepoint</h5>
+                    <p class="downtown">Downtown Covina / 236 North Citrus Avenue / Covina / 626-966-4141</p>
+        </div>
+            <h4>Join our Mailing List</h4>
+               <form action="http://222.example.com/subscribe.php">
+                    <p><a href="mailto:scottalane@mac.com">Send us an e-mail</a></p>
+                        <input type="text" name="email" />
+                        <input type="submit" name="susbcribe" value="Subscribe" />
+                </form>
+            <h4>Ask Carol</h4>
+                <form action="http://222.example.com/subscribe.php">
+                    <p>type question here</p>
+                    <input type="text" name="email" />
+                    <input type="submit" name="susbcribe" value="Subscribe" />
+                </form>
                        
                     <h9>Downtown Covina 236 North Citrus Avenue / 966-4141 / Privacy Agreement</h9>
 
 <!-- FOOTER AND SOCIAL NAVIGATION BUTTONS FOR SOCIAL MEDIA-->
-
-    <footer>
-        <h6>LIKE US!</h6>
-            <nav>
-                <div>
-                    <h2 class="pinterest"><a href="https://www.pinterest.com/login/" target="_blank">P</a></h2>
-                </div>
-                <div>
-                    <h2 class="facebook"><a href="https://www.facebook.com/" target="_blank">F</a></h2>
-                </div>
-                <div>
-                    <h2 class="twitter"><a href="https://twitter.com/twitter?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">T</a></h2>
-                </div>
-                <div>
-                    <h2 class="instagram"><a href="https://www.instagram.com/accounts/login/" target="_blank">I</a></h2>
-                </div>
-                <div>
-                    <h2 class="home"><a href="#top">Home</a></h2>
-                </div>
-            </nav>
-        </footer>
+        
+            <footer>
+                <h6 class="like_us">LIKE US!</h6>
+                    <nav>
+                      <div>
+                        <h2 class="pinterest"><a href="https://www.pinterest.com/login/" target="_blank">P</a></h2>
+                    </div>
+                    <div>
+                        <h2 class="facebook"><a href="https://www.facebook.com/" target="_blank">F</a></h2>
+                    </div>
+                     <div>
+                        <h2 class="twitter"><a href="https://twitter.com/twitter?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">T</a></h2>
+                    </div>
+                    <div>
+                        <h2 class="instagram"><a href="https://www.instagram.com/accounts/login/" target="_blank">I</a></h2>
+                    </div>
+                    <div>
+                        <h3 class="home"><a href="#top">Home</a></h3>
+                    </div>
+                </nav>
+            </footer>
+        </div>
+        </div>
     </body>
 </html>
